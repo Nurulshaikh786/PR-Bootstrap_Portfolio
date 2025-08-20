@@ -1,0 +1,53 @@
+:root{
+    --theme-templates:#1B1B1B;
+    --theme-bg1:#1F1F1F;
+    --theme-text:#B4B4B4;
+    --theme-hover:#969696;
+}
+
+body{
+    font-family: 'Poppins'!important;
+    background: var(--theme-bg1);
+}
+
+.navigation{
+    margin-left: 20px;
+    transform: translateY(-50%);
+    background-color: var(--theme-templates);
+    border: 1px solid #ffffff84;
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px;
+ 
+}
+
+nav .nav-link{
+    color: var(--theme-hover);
+    transition: all 0.3s ease;
+}
+
+nav .nav-link:hover {
+    color:white !important;
+}
+nav .active{
+    color: white !important;
+}
+
+.social-links  li i{
+   
+    background: var(--theme-bg1);
+    color: white;
+    padding: 8px 12px;
+    border: 1px solid #ffffff0c !important;
+      transition: all 0.5s ease;
+   
+}
+.social-links  li i:hover{
+   
+    background: white;
+    font-weight: bolder;
+    color: var(--theme-bg1);
+    padding: 8px 12px;
+    
+   
+}
