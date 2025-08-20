@@ -3,12 +3,15 @@
     --theme-bg1:#1F1F1F;
     --theme-text:#B4B4B4;
     --theme-hover:#969696;
+    --theme-white:#ECECEC;
 }
 
 body{
-    font-family: 'Poppins'!important;
+    font-family: Poppins !important;
     background: var(--theme-bg1);
+    color: var(--theme-white);
 }
+
 
 .navigation{
     margin-left: 20px;
@@ -16,8 +19,9 @@ body{
     background-color: var(--theme-templates);
     border: 1px solid #ffffff84;
     border-radius: 20px;
-    width: 300px;
+    width: 290px;
     padding: 20px;
+    transition: all 0.2s ease-in;
  
 }
 
@@ -27,27 +31,84 @@ nav .nav-link{
 }
 
 nav .nav-link:hover {
-    color:white !important;
+    color:var(--theme-white) !important;
 }
 nav .active{
-    color: white !important;
+    color: var(--theme-white)!important;
 }
 
 .social-links  li i{
-   
-    background: var(--theme-bg1);
     color: white;
-    padding: 8px 12px;
-    border: 1px solid #ffffff0c !important;
-      transition: all 0.5s ease;
-   
+    line-height: 40px;
+    transition: all 0.5s ease;
 }
-.social-links  li i:hover{
+
+.social-links  li:hover i{
+    color: var(--theme-bg1) !important;
+}
+
+.social-links  li{
+    border: 1px solid #ffffff0c !important;
+    background: var(--theme-bg1);
+    height: 40px !important; 
+    width: 40px !important;
+    transition: all 0.5s ease;
+}
+.social-links  li:hover{
    
-    background: white;
+    background: var(--theme-white);
     font-weight: bolder;
     color: var(--theme-bg1);
-    padding: 8px 12px;
     
    
 }
+
+.navbar-toggler-icon{
+    background: var(--theme-white);
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   line-height: 50px;
+}
+
+.navbar-toggler:focus{
+    border: none !important;
+    box-shadow: none;
+}
+
+/* Custom CSS to handle the icon toggle */
+.navbar-toggler[aria-expanded="false"] .close-icon {
+  display: none;
+}
+
+.navbar-toggler[aria-expanded="true"] .open-icon {
+  display: none;
+}
+
+.navbar-toggler[aria-expanded="true"] .close-icon {
+  display: inline;
+}
+
+main {
+    width: calc(100% - 300px);
+    margin-left: auto;
+    font-family: 'Poppins';
+}
+
+.snap span{
+    border-bottom: 2px solid var(--theme-white) !important;
+}
+
+.button .btn-light , .button .btn-outline-light{
+    border-radius: 50px !important;
+    padding: 15px 20px !important;
+    transition: all 0.3s ease;
+    border: 1px solid var(--theme-white) !important;
+}
+
+
+.button .btn-light:hover{
+    transform: translateY(-2px);
+    box-shadow: rgba(235, 230, 230, 0.25) 5px 20px 30px -18px;
+}
+
