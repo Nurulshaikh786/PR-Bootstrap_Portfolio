@@ -24,23 +24,23 @@
 
         <header>
             <aside>
-                <nav class="navbar-expand-lg navbar">
+                <nav class="navbar navbar-expand-xl">
                     <button class="navbar-toggler position-fixed end-0 top-0"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse"
                         aria-controls="collapse"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon">
-                            <i class="bi bi-list fs-4 open-icon"></i>
-                            <i class="bi bi-x fs-3 close-icon"></i>
+                        <span class="navbar-toggler-icon m-3">
+                            <i class="bi bi-list open-icon fs-4"></i>
+                            <i class="bi bi-x close-icon fs-4"></i>
                         </span>
                     </button>
                     <div
-                        class="position-fixed top-50 navigation collapse navbar-collapse  "
+                        class="position-fixed top-50  navigation collapse navbar-collapse  "
                         id="navbarCollapse">
                         <div class="flex-column align-items-start ">
-                            <ul class="navbar-nav flex-column">
+                            <ul class="navbar-nav flex-column ">
                                 <li class="my-2 ">
                                     <a href="javascript:void(0)"
                                         class="nav-link" style="color: white;">
@@ -59,14 +59,14 @@
                                     <a href="javascript:void(0)"
                                         class="nav-link">
                                         <i
-                                            class="bi bi-file-earmark-text fs-4  me-2"></i>
+                                            class="bi bi-file-earmark-text fs-5  me-2"></i>
                                         Resume
                                     </a>
                                 </li>
                                 <li class="my-2">
                                     <a href="javascript:void(0)"
                                         class="nav-link">
-                                        <i class="bi bi-images fs-4  me-2"></i>
+                                        <i class="bi bi-images fs-5  me-2"></i>
                                         Portfolio
                                     </a>
                                 </li>
@@ -74,7 +74,7 @@
                                     <a href="javascript:void(0)"
                                         class="nav-link">
                                         <i
-                                            class="bi bi-hdd-stack fs-4  me-2"></i>
+                                            class="bi bi-hdd-stack fs-5  me-2"></i>
                                         Services
                                     </a>
                                 </li>
@@ -82,7 +82,7 @@
                                     <a href="javascript:void(0)"
                                         class="nav-link">
                                         <i
-                                            class="bi bi-menu-button fs-4  me-2"></i>
+                                            class="bi bi-menu-button fs-5  me-2"></i>
                                         Dropdown
                                     </a>
                                 </li>
@@ -90,13 +90,13 @@
                                     <a href="javascript:void(0)"
                                         class="nav-link">
                                         <i
-                                            class="bi bi-envelope fs-4  me-2"></i>
+                                            class="bi bi-envelope fs-5  me-2"></i>
                                         Contact
                                     </a>
                                 </li>
                             </ul>
                             <ul
-                                class="flex-row d-flex list-unstyled social-links mt-3 mb-0">
+                                class="flex-row d-flex list-unstyled social-links mt-3 mb-2">
                                 <li
                                     class="me-2 border rounded-circle text-center ps-2">
                                     <i
@@ -130,26 +130,32 @@
         </header>
 
         <main>
+<<<<<<< HEAD
             <section class="hero d-flex align-items-center">
                <div class="container">
                  <div class="bg-elements position-absolute">
                     <div class="circle circle-1"></div>
                     <div class="circle circle-2"></div>
                 </div>
+=======
+            <section class="hero ">
+            
+>>>>>>> f7dd4fe (push-again)
                 <div class="hero-content position-relative  ps-5">
                     <div class="container">
+                        <div class="circle circle-1"></div>
                         <div class="row align-items-center">
                             <div class="col-lg-6 ">
                                 <div class="hero-detail ">
-                                    <h1 class="snap mb-3">
+                                    <h1 class="snap mb-2 fw-bold">
                                         Snap<span
                                             class="border border-bottom">Folio</span>
                                     </h1>
-                                    <h3 class="name h2 mb-3">
+                                    <h3 class="name h2 mb-3 fw-bold">
                                         Alexender Chen
                                     </h3>
-                                    <h3 class="proffesion mb-3 fw-normal">
-                                        I'm a <span class="fw-bold"
+                                    <h3 class="proffesion mb-3 fw-normal fs-3">
+                                        I'm a <span class=" fw-bold"
                                             id="element"></span>
                                     </h3>
                                     <p class="mb-5 para fs-5">
@@ -175,7 +181,7 @@
                                         </div>
                                     </div>
                                     <ul
-                                        class="flex-row d-flex list-unstyled social-links-2 mt-5 mb-0">
+                                        class="flex-row d-flex list-unstyled social-links-2 mt-5 mb-5">
                                         <li
                                             class="me-2 border rounded-circle text-center ps-2">
                                             <i
@@ -200,7 +206,8 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 align-items-sm-center position-relative">
+                                                    <div class="circle circle-2"></div>
                                 <div class="hero-detail-img">
                                     <img
                                         src="./assets/image/profile-2.webp"
@@ -214,19 +221,33 @@
             </section>
 
             <section class="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="profile-card">
 
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-   <script>
+        
+ <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script
+            src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
     var typed = new Typed('#element', {
       strings: ['FullStack Developer', 'MERN Developer'],
       typeSpeed: 120,
       loop:true
     });
-  </script>
-        <script src="./assets/js/bootstrap.bundle.min.js"
-            type="text/javascript"></script>
+        </script>
+       
+
     </body>
 
 </html>
